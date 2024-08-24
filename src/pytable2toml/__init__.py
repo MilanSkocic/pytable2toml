@@ -1,3 +1,3 @@
-r"""Table converter to toml format"""
+r"""Table converter to toml format."""
 
 

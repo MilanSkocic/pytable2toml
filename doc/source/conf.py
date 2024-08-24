@@ -5,6 +5,9 @@ import os
 
 sys.path.append(os.path.abspath("../../src/"))
 
+with open("../../VERSION", "r") as f:
+    pyversion = f.read().strip()
+
 #
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
@@ -13,9 +16,10 @@ sys.path.append(os.path.abspath("../../src/"))
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'pytable2toml'
-copyright = '2024, M. Skocic'
+copyright = 'M. Skocic'
 author = 'M. Skocic'
-release = '0.0.1'
+version = pyversion
+release = version
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -35,5 +39,5 @@ source_suffix = {
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'alabaster'
+html_theme = "pydata_sphinx_theme"
 html_static_path = ['_static']
