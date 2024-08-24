@@ -7,3 +7,7 @@ doc:
 
 docs:
 	cp -rf ./doc/build/html/* ./docs/
+
+
+clean:
+	make -C doc clean
