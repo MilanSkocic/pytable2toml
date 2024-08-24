@@ -10,6 +10,7 @@ ifeq ($(PLATFORM), darwin)
 endif
 
 SETUP=setup.py pyproject.toml
+PY_SRC=./src
 
 .PHONY: doc docs clean
 
